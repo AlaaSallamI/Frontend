@@ -1,55 +1,64 @@
+/********** Base styles **********/
 * {
   box-sizing: border-box;
-}
-
-body{
-  font-family: Helvetica;
-  font-size: 20px
-
+  font-family: cursive;
 }
 
 h1 {
   margin-bottom: 15px;
+  font-size: 1.75em;
   text-align: center;
-  font-size: 35px;
-
 }
 
-#global{
-    
-    background-color: gray;
-    border: 1px solid black;
-    margin: 10px;
-    position: relative;
-}
-
-.title{
-  position: relative;
+p {
   border: 1px solid black;
-  width: 150px;
-  height:30px;
-  text-align: center;
+  background-color: #A52A2A;
+  width: 90%;
+  height: 150px;
+  margin-right: auto;
   margin-left: auto;
-  margin-right: 0px;
+  font-family: Helvetica;
+  color: white;
+}
+
+div.title {
+  border: 1px solid black;
+  font-size: 1.25em;
+  position: absolute;
+  right: 0px;
   top: 0px;
-  left: 0px;
-  font-size: 25px;
+  font-weight: bold;
+  padding: 5px 10px;
+  width: 150px;
+  text-align: center;
 }
 
-.title.p1{
-background-color: blue;
-}
-.title.p2{
-background-color: red;
-}
-.title.p3{
-background-color: green;
+div.content {
+  margin-top: 50px;
+  padding: 10px;
+  font-weight: bold;
 }
 
-
-#content{
-  padding:10px;
+div.div-container {
+  border: 1px solid black;
+  background-color: #c1bebe;
+  position: relative;
+  margin: 10px;
 }
+
+.bg-lightpink {
+  background-color: #fba9b5;
+}
+
+.bg-red {
+  background-color: #da5050;
+  color: white;
+}
+
+.bg-yellow {
+  background-color: #dcd78d;
+}
+
 /* Simple Responsive Framework. */
 .row {
   width: 100%;
@@ -142,44 +151,44 @@ background-color: green;
 }
 
 /********** small devices only **********/
-@media (max-width: 767px) {
-  .col--1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+@media (max-width: 767px){
+  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12{
     float: left;
   }
   .col-sm-1 {
     width: 8.33%;
   }
-  .col-sm-2 {
+  .col-sm-2{
     width: 16.66%;
   }
-  .col-sm-3 {
+  .col-sm-3{
     width: 25%;
   }
-  .col-sm-4 {
+  .col-sm-4{
     width: 33.33%;
   }
-  .col-sm-5 {
+  .col-sm-5{
     width: 41.66%;
   }
-  .col-sm-6 {
+  .col-sm-6{
     width: 50%;
   }
-  .col-sm-7 {
-    width: 58.33%;
+  .col-sm-7{
+    width: 58.33 %;
   }
-  .col-sm-8 {
+  .col-sm-8{
     width: 66.66%;
   }
-  .col-sm-9 {
+  .col-sm-9{
     width: 74.99%;
   }
-  .col-sm-10 {
+  .col-sm-10{
     width: 83.33%;
   }
-  .col-sm-11 {
+  .col-sm-11{
     width: 91.66%;
   }
-  .col-sm-12 {
+  .col-sm-12{
     width: 100%;
   }
 }
